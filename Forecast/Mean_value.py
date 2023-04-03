@@ -18,6 +18,7 @@ def LoadFile(path):
     mFile=open(path,encoding="utf-8")
     mList=mFile.read().split("\n")
     # print(mList)#['1,0', '2,260', '3,290', '4,435', '5,300', '6,570', '7,355', '8,430',...]
+    mList.pop()
     return mList
     pass
 
